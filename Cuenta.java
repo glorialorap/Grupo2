@@ -81,6 +81,11 @@ public class Cuenta {
         Edad = edad;
     }
 
-    
+    @Override
+    public String toString() {
+        return "Cuenta [Numero_Cuenta=" + Numero_Cuenta + ", Nombre_Cliente=" + Nombre_Cliente + ", Saldo=" + Saldo
+                + ", Dirrecion=" + Dirrecion + ", Nombre_Banco=" + Nombre_Banco + ", Correo_Electronico="
+                + Correo_Electronico + ", Edad=" + Edad + "]";
+    }
 
 }
