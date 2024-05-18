@@ -1,91 +1,97 @@
 public class Cuenta {
 
-    private int Numero_Cuenta;
-    private String Nombre_Cliente;
-    private double Saldo;
-    private String Dirrecion;
-
+    private int numeroCuenta=-1;
+    private String nombreCliente;
+    private double saldo;
+    private String direccion;
     //! Atributos agregados:
-    private String Nombre_Banco;
-    private String Correo_Electronico;
-    private int Edad;
+    private String nombreBanco;
+    private String correoElectronico;
+    private int edad;
+    private int numeroArchivos;
     
     //constructor vacio
     public Cuenta() {
     }
 
-    public Cuenta(int numero_Cuenta, String nombre_Cliente, double saldo, String dirrecion, String nombre_Banco,
-            String correo_Electronico, int edad) {
-        Numero_Cuenta = numero_Cuenta;
-        Nombre_Cliente = nombre_Cliente;
-        Saldo = saldo;
-        Dirrecion = dirrecion;
-        Nombre_Banco = nombre_Banco;
-        Correo_Electronico = correo_Electronico;
-        Edad = edad;
+    public Cuenta(int numeroCuenta, String nombreCliente, double saldo, String direccion, String nombreBanco,
+            String correoElectronico, int edad) {
+        this.numeroCuenta = numeroCuenta;
+        this.nombreCliente = nombreCliente;
+        this.saldo = saldo;
+        this.direccion = direccion;
+        this.nombreBanco = nombreBanco;
+        this.correoElectronico = correoElectronico;
+        this.edad = edad;
     }
 
-    public int getNumero_Cuenta() {
-        return Numero_Cuenta;
+    public int getNumeroCuenta() {
+        return numeroCuenta;
     }
 
-    public void setNumero_Cuenta(int numero_Cuenta) {
-        Numero_Cuenta = numero_Cuenta;
+    public void setNumeroCuenta(int numeroCuenta) {
+        this.numeroCuenta = numeroCuenta;
     }
 
-    public String getNombre_Cliente() {
-        return Nombre_Cliente;
+    public String getNombreCliente() {
+        return nombreCliente;
     }
 
-    public void setNombre_Cliente(String nombre_Cliente) {
-        Nombre_Cliente = nombre_Cliente;
+    public void setNombreCliente(String nombreCliente) {
+        this.nombreCliente = nombreCliente;
     }
 
     public double getSaldo() {
-        return Saldo;
+        return saldo;
     }
 
     public void setSaldo(double saldo) {
-        Saldo = saldo;
+        this.saldo = saldo;
     }
 
-    public String getDirrecion() {
-        return Dirrecion;
+    public String getDireccion() {
+        return direccion;
     }
 
-    public void setDirrecion(String dirrecion) {
-        Dirrecion = dirrecion;
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
-    public String getNombre_Banco() {
-        return Nombre_Banco;
+    public String getNombreBanco() {
+        return nombreBanco;
     }
 
-    public void setNombre_Banco(String nombre_Banco) {
-        Nombre_Banco = nombre_Banco;
+    public void setNombreBanco(String nombreBanco) {
+        this.nombreBanco = nombreBanco;
     }
 
-    public String getCorreo_Electronico() {
-        return Correo_Electronico;
+    public String getCorreoElectronico() {
+        return correoElectronico;
     }
 
-    public void setCorreo_Electronico(String correo_Electronico) {
-        Correo_Electronico = correo_Electronico;
+    public void setCorreoElectronico(String correoElectronico) {
+        this.correoElectronico = correoElectronico;
     }
 
     public int getEdad() {
-        return Edad;
+        return edad;
     }
 
     public void setEdad(int edad) {
-        Edad = edad;
+        this.edad = edad;
     }
 
-    @Override
+    public int getNumeroArchivos() {
+        return numeroArchivos;
+    }
+
+    public void setNumeroArchivos(int numeroArchivos) {
+        this.numeroArchivos = numeroArchivos;
+    }
+
     public String toString() {
-        return "Cuenta [Numero_Cuenta=" + Numero_Cuenta + ", Nombre_Cliente=" + Nombre_Cliente + ", Saldo=" + Saldo
-                + ", Dirrecion=" + Dirrecion + ", Nombre_Banco=" + Nombre_Banco + ", Correo_Electronico="
-                + Correo_Electronico + ", Edad=" + Edad + "]";
+        return  numeroCuenta +"-"+ nombreCliente  +"-"+ saldo +"-"+ direccion +"-"+ nombreBanco +"-"+ 
+                correoElectronico+"-"+ edad ;
     }
 
 }
