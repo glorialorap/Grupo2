@@ -59,7 +59,7 @@ public class App {
                         while (true) {
                             System.out.print("Ingrese la edad: ");
                             ageA = sc.nextInt();
-                            sc.nextLine(); // Consume el salto de línea
+                            sc.nextLine();
                             if (ageA >= 18) {
                                 break;
                             } else {
@@ -102,7 +102,7 @@ public class App {
                         while (true) {
                             System.out.print("Nueva edad: ");
                             newAge = sc.nextInt();
-                            sc.nextLine(); // Consume el salto de línea
+                            sc.nextLine();
                             if (newAge >= 18) {
                                 break;
                             } else {
